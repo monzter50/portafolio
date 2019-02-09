@@ -1,0 +1,28 @@
+// BLOCK + ELEMENT
+.input, [class^=input-]{
+    box-sizing: border-box;
+    padding:.5em;
+    border:none;
+    background:transparent;
+    &:focus{
+		outline: none;
+    }
+}
+
+.input{
+	&--primary{
+		border-bottom:5px solid var(--white);
+		color: var(--white);
+	}
+	&--lg{
+		width:100%;
+		max-width: 600px;
+		font-size: var(--font-size-md);
+
+	}
+	&--md{
+		width:100%;
+		max-width: 450px;
+		font-size: var(--font-size-sm);
+	}
+}

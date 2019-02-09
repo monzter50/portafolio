@@ -1,0 +1,11 @@
+.not-found{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--first-color);
+  color: var(--second-color);
+  .fof{
+    text-align: center;
+  }
+}

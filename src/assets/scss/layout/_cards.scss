@@ -1,0 +1,19 @@
+.cards,
+[class^=cards-] {
+ display: grid;
+ align-content: center;
+ justify-items: center;
+ grid-template-columns: 1fr;
+ padding: 4em 0;
+ grid-gap:.5em;
+}
+.cards{
+    @include desktop {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    &-skills{
+        @include desktop {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}

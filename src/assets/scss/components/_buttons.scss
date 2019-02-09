@@ -1,0 +1,42 @@
+// BLOCK + ELEMENT
+.button, [class^=button-] {
+  display: inline-block;
+  line-height: 2em;
+  padding: .8em;
+  text-decoration: none;
+  border: none;
+  margin: .5em;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 1em;
+  background:transparent;
+}
+
+[class^="button-"]:disabled {
+  opacity: .8;
+  cursor: not-allowed;
+  position: relative;
+}
+.sending-form:disabled::before {
+  content:'';
+  position:absolute;
+  right:10px;
+  top:50%;
+  margin-top:-11px;
+  width:10px;
+  height:10px;
+  border: 4px solid;
+  border-left-color: transparent;
+  border-radius: 50%;
+  animation: rotate infinite .60s linear;
+}
+.close{
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

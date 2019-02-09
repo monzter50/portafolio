@@ -1,0 +1,63 @@
+.hero{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    @include phone{
+        height: 55vh;
+         padding-bottom: 2em;
+    }
+    height: 100vh;
+    position: relative;
+    flex-direction: column;
+    .monster-dev{
+        width: 300px;
+        height: 300px;
+        @include desktop{
+            width: 400px;
+            height: 400px;
+        }
+        object-fit: contain;
+        z-index: 1;
+        
+        @include phone{
+          position: relative;
+           bottom: initial;
+           transform: initial;
+        }
+        position: absolute;
+        bottom: 60%;
+        transform: translateY(60%);
+    }
+    .monster-content {
+       
+        @include phone{
+            color: var(--second-color);
+            a{
+                 color: var(--second-color);
+            }
+           padding-bottom: 0;
+        }
+        font-size: var(--font-size-sm);
+        color: var(--neutral-color);
+        z-index: 1;
+        padding-bottom: 8em;
+        position: relative;
+         @include desktop {
+              padding-bottom: 3em;
+             font-size: var(--font-size-md);
+         }
+    }
+    &::after{
+        @include phone{
+            background: initial;
+        }
+        content: "";
+        position: absolute;
+        width: 100%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height:65vh;
+         background: url(https://s3.amazonaws.com/jerafee-images/header.svg) no-repeat 50%/cover;
+    }
+}

@@ -1,18 +1,164 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="monster-grid">
+    <NavbarComponent/>
+    <main class="main">
+        <section class="hero">
+            <img src="../assets/image/jose.png" class="monster-dev" alt="Monster Developer">
+            <article class="text-center monster-content">
+              <h1 class="margin--none">Hi, I'm a  Front-end developer <br>from Cancún, Q.Roo.</h1>
+              <a href="#about"><i class="fas fa-angle-down"></i></a>
+            </article> 
+        </section>
+        <section class="layout-about" id="about">
+          <div class="container">
+             <article class="layout-about__content padding__y">
+              <h2>ABOUT ME</h2>
+              <p>I am a creative, orderly, analytical, self-taught and perfectionist person.</p>
+              <p>My favorite hobbies is watch movies, talk with my wife, read articles about new update programming language and study new things about the programming and UI/UX.</p>
+
+            </article>
+          </div>
+         
+
+        </section>
+          <section class="layout-development">
+            <div class="cards container padding__y">
+              <div class="card">
+                <div class="card-container" :class="{fliped:flipedFront}">
+                  <div class="card-front">
+                    <!-- <img src="https://avatars0.githubusercontent.com/u/17136843?s=460&v=4" class="card-header" alt=""> -->
+                    <article class="card-description">
+                      <h1 class="monster-title">Front-end Developer</h1>
+                      <p class="monster-description">I like to make structure of simple content, clean design and thoughtful interactions.</p>
+                      <button class="button-link" @click="flipedFront = true">LEARN MORE</button>
+                    </article>
+                  </div>
+                  <div class="card-back" >
+                    <article class="card-description" @click="flipedFront = false">
+                      <h2 class="monster-sub-title">Language, Frameworks and Library that I dominate</h2>
+                      <p class="monster-description">HTML, CSS, SCSS, Bootstrap, Stylus, JavaScript, ReactJs, Redux and Vuejs.</p>
+                  
+                      <h2 class="monster-sub-title">Methodologies</h2>
+                      <p class="monster-description">BEM, SMACSS, Git Flow and OOCSS</p>
+                    </article>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-container" :class="{fliped:flipedDes}">
+                  <div class="card-front">
+                    <!-- <img src="https://avatars0.githubusercontent.com/u/17136843?s=460&v=4" class="card-header" alt=""> -->
+                    <article class="card-description">
+                      <h1 class="monster-title">Web Designer</h1>
+                      <p class="monster-description">I love coding things from scratch, and I enjoy giving life to my web pages</p>
+                      <button class="button-link" @click="flipedDes = !flipedDes">LEARN MORE</button>
+                    </article>
+                  </div>
+                  <div class="card-back" @click="flipedDes = false">
+                    <article class="card-description">
+                      <h2 class="monster-sub-title">Things I enjoy designing:</h2>
+                      <p class="monster-description">UI, Web and Apps</p>
+                    
+                      <h2 class="monster-sub-title">Design Tools</h2>
+                      <p  class="monster-description">Adobe XD</p>
+                    </article>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-container" :class="{fliped:flipedDev}">
+                  <div class="card-front">
+                    <!-- <img src="https://avatars0.githubusercontent.com/u/17136843?s=460&v=4" class="card-header" alt=""> -->
+                    <article class="card-description">
+                      <h1  class="monster-title">Software Developer</h1>
+                      <p class="monster-description">I love learning from other areas, and I enjoy solving problems through technology.</p>
+                      <button class="button-link" @click="flipedDev = !flipedDev">LEARN MORE</button>
+                    </article>
+                  </div>
+                  <div class="card-back" @click="flipedDev = false">
+                    <article class="card-description">
+                      <h2 class="monster-sub-title">Language, Frameworks and Library that I dominate</h2>
+                      <p  class="monster-description"> Twig, PHP and MySQL . </p>
+                    </article>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        </section>
+        <section class="layout-skills">
+          <div class="text-center padding__y">
+            <h2>SKILLS</h2>
+            <div class="cards-skills container">
+                <div class="card-skill">
+                  <img src="../assets/image/creative.svg" width="104px" alt="">
+                  <p class="monster-title">Creative</p>
+                </div>
+                <div class="card-skill">
+                    <img src="../assets/image/support.svg" width="104px" alt="">
+                    <p class="monster-title">Teamwork</p>
+                </div>
+                <div class="card-skill">
+                  <img src="../assets/image/decision.svg" width="104px" alt="">
+                  <p class="monster-title">Proactive</p>
+                </div>
+                <div class="card-skill">
+                  <img src="../assets/image/intellectual.svg" width="104px" alt="">
+                  <p class="monster-title">Autodidact</p>
+                </div>
+            </div>
+          </div> 
+        </section>
+        <section class="layout-portafolio">
+          <h2>PORTAFOLIO</h2>
+          <div>
+
+          </div>
+        </section>
+        <section>
+          <h2>CONTACT ME</h2>
+          <div>
+            <form action="">
+              <div>
+                <label>Name</label>
+                <input type="text">
+              </div>
+              <div>
+                <label>Email</label>
+                <input type="text">
+              </div>
+              <div>
+                <label for="">Message</label>
+                <input type="text">
+              </div>
+              <button>SEND</button>
+            </form>
+            <img src="" alt="">
+          </div>
+        </section>
+    </main>
+    <FooterLayout/>
   </div>
+  
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import NavbarComponent from '@/components/NavbarComponent.vue'
+import FooterLayout from '@/components/FooterLayout.vue'
 
 export default {
   name: 'home',
   components: {
-    HelloWorld
+    NavbarComponent,
+    FooterLayout
+  },
+   data: function () {
+    return {
+      flipedDev: false,
+      flipedDes: false,
+      flipedFront: false,
+    }
   }
 }
 </script>

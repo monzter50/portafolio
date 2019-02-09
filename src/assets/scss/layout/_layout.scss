@@ -1,0 +1,87 @@
+
+.monster-grid{
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr 100px;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+  height: 100vh;
+}
+.layout{
+	// About
+	&-about{
+		background: var(--first-color);
+		display: flex;
+		justify-content: center;
+		@include phone{
+			padding:0;
+			text-align: center;
+		}
+		padding: 4em 0;
+		&__content{
+			position: relative;
+
+			padding:2em 3em;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			color: var(--neutral-color);
+			@include desktop{
+					&::after {
+						content: "";
+						display: block;
+						position: absolute;
+						width: .5rem;
+						height: 100%;
+						left: 0;
+						background: var(--second-color);
+					}
+			}
+		
+		}
+	}
+	// Development
+	&-development{
+		display: flex;
+		background: var(--neutral-color);
+	}
+	// Skills
+	&-skill{}
+}
+.container{
+	width: 1200px;
+	width: 90%;
+	margin: 0 auto;
+}
+.main{
+	grid-area:main;
+	background: teal;
+}
+.row-grid-two{
+  grid-template-rows:1fr 1fr;
+  @include desktop{
+    grid-template-rows: 1fr;
+  }
+}
+
+
+@include desktop{
+	.main{
+		padding:0;
+	}
+
+	.container{
+		max-width:1200px;
+		width:85%;
+		margin:0 auto;
+	}
+	.xtb-container{
+		padding-left:15px;
+		padding-right:15px;
+		max-width: 1920px;
+	}
+
+}
+
