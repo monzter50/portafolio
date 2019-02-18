@@ -22,22 +22,21 @@
 		padding: 4em 0;
 		&__content{
 			position: relative;
-
 			padding:2em 3em;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			color: var(--neutral-color);
 			@include desktop{
-					&::after {
-						content: "";
-						display: block;
-						position: absolute;
-						width: .5rem;
-						height: 100%;
-						left: 0;
-						background: var(--second-color);
-					}
+				&::after {
+					content: "";
+					display: block;
+					position: absolute;
+					width: .5rem;
+					height: 100%;
+					left: 0;
+					background: var(--second-color);
+				}
 			}
 		
 		}
@@ -49,6 +48,53 @@
 	}
 	// Skills
 	&-skill{}
+	// Portafolio
+	&-portafolio{
+		background: var(--first-color);
+		color: var(--white);
+		position: relative;
+		@include desktop{
+			&::after {
+				content: "";
+				position: absolute;
+				width: 100vw;
+				//  left: -5px;
+				//  right: 0;
+				bottom: -110px;
+				height: 170px;
+
+				background: url(https://s3.amazonaws.com/jerafee-images/penenennee.svg) no-repeat 50%/cover;
+			}
+		}
+	
+	}
+	// Contact
+	&-contact{
+		padding-top: 5em;
+		.contact-description{
+			display: grid;
+			@include phone{
+				grid-template-columns: 1fr;
+			}
+			grid-template-columns: repeat(2, 1fr);
+			justify-items: center;
+			align-content: center;
+			align-items: center;
+		}
+		&--img{
+			width: 100%;
+			height: auto;
+			object-fit: contain;
+			max-width: 550px;
+		}
+	}
+	&-footer{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		
+	}
 }
 .container{
 	width: 1200px;
@@ -57,7 +103,7 @@
 }
 .main{
 	grid-area:main;
-	background: teal;
+	// background: teal;
 }
 .row-grid-two{
   grid-template-rows:1fr 1fr;

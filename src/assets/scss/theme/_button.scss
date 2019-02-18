@@ -2,4 +2,10 @@
     &-link{
         color: var(--second-color);
     }
+    &-primary{
+        background: var(--second-color);
+        color: var(--white);
+        padding: .5em 1.5em;
+        border-radius: 1.5em;
+    }
 }

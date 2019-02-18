@@ -14,6 +14,23 @@
     &-skills{
         @include desktop {
             grid-template-columns: repeat(4, 1fr);
+            
         }
+    }
+    &-portafolio{
+        
+        display: grid;
+        grid-template-columns:1fr;
+        @include tablet{
+            grid-template-columns: repeat(2, 1fr)
+        }
+        // grid-template-rows: repeat(16, 5vw);
+         
+         @include desktop{
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(8, 5vw);
+            grid-gap: 15px;
+         }
+    
     }
 }

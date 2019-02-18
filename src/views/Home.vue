@@ -111,30 +111,115 @@
         </section>
         <section class="layout-portafolio">
           <h2>PORTAFOLIO</h2>
-          <div>
+          <div class="cards-portafolio container">
 
+            <div class="card-portafolio" data-name="Nahual">
+                <img src="https://source.unsplash.com/random/400x402" alt="">
+                <div class="card-portafolio__description">
+                  <article class="card-content"> 
+                    <h2>Hola</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quibusdam reprehenderit voluptatibus nam illum expedita sequi ullam, harum eligendi incidunt odit animi magnam. Repudiandae aperiam incidunt, officia sequi quos esse.</p>
+                  </article>
+                
+              </div>
+            </div>
+
+             <div class="card-portafolio" data-name="Nahual">
+                <img src="https://source.unsplash.com/random/400x402" alt="">
+               <div class="card-portafolio__description">
+                  <article class="card-content"> 
+                    <h2>Hola</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quibusdam reprehenderit voluptatibus nam illum expedita sequi ullam, harum eligendi incidunt odit animi magnam. Repudiandae aperiam incidunt, officia sequi quos esse.</p>
+                  </article>
+              </div>
+            </div>
+
+            <div class="card-portafolio" data-name="Nahual">
+              <img src="https://source.unsplash.com/random/400x402" alt="">
+              <div class="card-portafolio__description">
+                  <article class="card-content"> 
+                    <h2>Hola</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quibusdam reprehenderit voluptatibus nam illum expedita sequi ullam, harum eligendi incidunt odit animi magnam. Repudiandae aperiam incidunt, officia sequi quos esse.</p>
+                  </article>
+              </div>               
+
+            </div>
+
+            <div class="card-portafolio" data-name="Nahual">
+              <img src="https://source.unsplash.com/random/400x402" alt="">
+              <div class="card-portafolio__description">
+                  <article class="card-content"> 
+                    <h2>Hola</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quibusdam reprehenderit voluptatibus nam illum expedita sequi ullam, harum eligendi incidunt odit animi magnam. Repudiandae aperiam incidunt, officia sequi quos esse.</p>
+                  </article>
+              </div>
+            </div>
+
+            <div class="card-portafolio" data-name="Nahual">
+              <img src="https://source.unsplash.com/random/400x402" alt="">
+              <div class="card-portafolio__description">
+                  <article class="card-content"> 
+                    <h2>Hola</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quibusdam reprehenderit voluptatibus nam illum expedita sequi ullam, harum eligendi incidunt odit animi magnam. Repudiandae aperiam incidunt, officia sequi quos esse.</p>
+                  </article>
+              </div>
+            </div>
+
+            <div class="card-portafolio" data-name="Nahual">
+              <img src="https://source.unsplash.com/random/400x402" alt="">
+              <div class="card-portafolio__description">
+                  <article class="card-content"> 
+                    <h2>Hola</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quibusdam reprehenderit voluptatibus nam illum expedita sequi ullam, harum eligendi incidunt odit animi magnam. Repudiandae aperiam incidunt, officia sequi quos esse.</p>
+                  </article>
+              </div>
+            </div>
+
+            <div class="card-portafolio" data-name="Nahual">
+              <img src="https://source.unsplash.com/random/400x402" alt="">
+              <div class="card-portafolio__description">
+                  <article class="card-content"> 
+                    <h2>Hola</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quibusdam reprehenderit voluptatibus nam illum expedita sequi ullam, harum eligendi incidunt odit animi magnam. Repudiandae aperiam incidunt, officia sequi quos esse.</p>
+                  </article>
+              </div>
+            </div>
+
+            <div class="card-portafolio" data-name="Nahual">
+              <img src="https://source.unsplash.com/random/400x402" alt="">
+              <div class="card-portafolio__description">
+                  <article class="card-content"> 
+                    <h2>Hola</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quibusdam reprehenderit voluptatibus nam illum expedita sequi ullam, harum eligendi incidunt odit animi magnam. Repudiandae aperiam incidunt, officia sequi quos esse.</p>
+                  </article>
+              </div>
+            </div>
           </div>
         </section>
-        <section>
-          <h2>CONTACT ME</h2>
-          <div>
-            <form action="">
-              <div>
+        <section class="layout-contact">
+          <h2 class="text-center padding__y">CONTACT ME</h2>
+          <div class="contact-description padding__y">
+            <form class="form" action="">
+              <div class="form--group">
                 <label>Name</label>
-                <input type="text">
+                <input class="form--input" type="text">
               </div>
-              <div>
+              <div class="form--group">
                 <label>Email</label>
-                <input type="text">
+                <input class="form--input" type="text">
               </div>
-              <div>
+              <div class="form--group">
                 <label for="">Message</label>
-                <input type="text">
+                 <textarea rows="4" cols="50" class="form--input"></textarea> 
               </div>
-              <button>SEND</button>
+              <div class="d-flex justify-content-flex-end">
+                <button class="button-primary">SEND</button>
+              </div>
+              
             </form>
-            <img src="" alt="">
+            <img src="../assets/image/icon-contact.svg" class="layout-contact--img" alt="">
           </div>
+          <!-- <img src="../assets/image/penenennee.svg" alt=""> -->
         </section>
     </main>
     <FooterLayout/>
