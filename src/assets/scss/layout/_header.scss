@@ -2,10 +2,6 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    @include phone{
-        height: 55vh;
-         padding-bottom: 2em;
-    }
     height: 100vh;
     position: relative;
     flex-direction: column;
@@ -13,39 +9,46 @@
         width: 300px;
         height: 300px;
         @include desktop{
-            width: 400px;
-            height: 400px;
+            width: 350px;
+            height: 350px;
         }
         object-fit: contain;
         z-index: 1;
         
-        @include phone{
-          position: relative;
-           bottom: initial;
-           transform: initial;
-        }
-        position: absolute;
-        bottom: 60%;
-        transform: translateY(60%);
+        // @include phone{
+        //   position: relative;
+        //    bottom: initial;
+        //    transform: initial;
+        // }
+        // position: absolute;
+        // bottom: 60%;
+        // transform: translateY(60%);
     }
-    .monster-content {
-       
-        @include phone{
-            color: var(--second-color);
-            a{
-                 color: var(--second-color);
+    
+    .monster{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        &-content {
+            @include phone{
+                color: var(--second-color);
+                a{
+                    color: var(--second-color);
+                }
+            padding-bottom: 0;
             }
-           padding-bottom: 0;
+            font-size: var(--font-size-sm);
+            color: var(--neutral-color);
+            z-index: 1;
+            // padding-bottom: 8em;
+            position: relative;
+            @include desktop {
+                //   padding-bottom: 0.8em;
+                font-size: var(--font-size-md);
+            }
         }
-        font-size: var(--font-size-sm);
-        color: var(--neutral-color);
-        z-index: 1;
-        padding-bottom: 8em;
-        position: relative;
-         @include desktop {
-              padding-bottom: 3em;
-             font-size: var(--font-size-md);
-         }
     }
     &::after{
         @include phone{
@@ -56,8 +59,35 @@
         width: 100%;
         left: 0;
         right: 0;
-        bottom: 0;
-        height:65vh;
-         background: url(https://s3.amazonaws.com/jerafee-images/header.svg) no-repeat 50%/cover;
+        bottom: -10px;
+        z-index: -1;
+        height:70vh;
+        background: url(https://s3.amazonaws.com/demo-portafolio/img/header.svg) no-repeat 50%/cover;
+    }
+}
+.jumbtron{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 70vh;
+    position: relative;
+    flex-direction: column;
+    background: var(--first-color);
+}
+.arrow-down{
+    position: relative;
+    animation:float .8s linear infinite;
+}
+@keyframes float {
+    0% {
+        bottom: -8px;
+    }
+
+    50% {
+        bottom: -15px;
+    }
+
+    100% {
+        bottom: -8px;
     }
 }

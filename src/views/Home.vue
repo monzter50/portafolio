@@ -2,12 +2,15 @@
   <div class="monster-grid">
     <NavbarComponent/>
     <main class="main">
-        <section class="hero">
+        <section class="hero" id="home">
+          <div class="monster">
             <img src="../assets/image/jose.png" class="monster-dev" alt="Monster Developer">
             <article class="text-center monster-content">
               <h1 class="margin--none">Hi, I'm a  Front-end developer <br>from Cancún, Q.Roo.</h1>
-              <a href="#about"><i class="fas fa-angle-down"></i></a>
+              <a href="#about"><i class="fas fa-angle-down arrow-down"></i></a>
             </article> 
+          </div>
+          
         </section>
         <section class="layout-about" id="about">
           <div class="container">
@@ -15,7 +18,6 @@
               <h2>ABOUT ME</h2>
               <p>I am a creative, orderly, analytical, self-taught and perfectionist person.</p>
               <p>My favorite hobbies is watch movies, talk with my wife, read articles about new update programming language and study new things about the programming and UI/UX.</p>
-
             </article>
           </div>
          
@@ -109,16 +111,16 @@
             </div>
           </div> 
         </section>
-        <section class="layout-portafolio">
-          <h2>PORTAFOLIO</h2>
-          <div class="cards-portafolio container">
+        <section class="layout-portafolio" id="portafolio">
+          <h2 class="text-center padding__y margin--none">PORTAFOLIO</h2>
+          <div class="cards-portafolio container ">
 
             <div class="card-portafolio" data-name="Nahual">
                 <img src="https://source.unsplash.com/random/400x402" alt="">
-                <div class="card-portafolio__description">
+                
+                <div class="card-portafolio__description" @click="goTodetail(1,'nahual','loco')">
                   <article class="card-content"> 
-                    <h2>Hola</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quibusdam reprehenderit voluptatibus nam illum expedita sequi ullam, harum eligendi incidunt odit animi magnam. Repudiandae aperiam incidunt, officia sequi quos esse.</p>
+                    <h2 class="margin--none">Hola</h2>
                   </article>
                 
               </div>
@@ -128,8 +130,7 @@
                 <img src="https://source.unsplash.com/random/400x402" alt="">
                <div class="card-portafolio__description">
                   <article class="card-content"> 
-                    <h2>Hola</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quibusdam reprehenderit voluptatibus nam illum expedita sequi ullam, harum eligendi incidunt odit animi magnam. Repudiandae aperiam incidunt, officia sequi quos esse.</p>
+                    <h2 class="margin--none">Hola</h2>
                   </article>
               </div>
             </div>
@@ -138,8 +139,7 @@
               <img src="https://source.unsplash.com/random/400x402" alt="">
               <div class="card-portafolio__description">
                   <article class="card-content"> 
-                    <h2>Hola</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quibusdam reprehenderit voluptatibus nam illum expedita sequi ullam, harum eligendi incidunt odit animi magnam. Repudiandae aperiam incidunt, officia sequi quos esse.</p>
+                    <h2 class="margin--none">Hola</h2>
                   </article>
               </div>               
 
@@ -149,8 +149,7 @@
               <img src="https://source.unsplash.com/random/400x402" alt="">
               <div class="card-portafolio__description">
                   <article class="card-content"> 
-                    <h2>Hola</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quibusdam reprehenderit voluptatibus nam illum expedita sequi ullam, harum eligendi incidunt odit animi magnam. Repudiandae aperiam incidunt, officia sequi quos esse.</p>
+                    <h2 class="margin--none">Hola</h2>
                   </article>
               </div>
             </div>
@@ -159,8 +158,7 @@
               <img src="https://source.unsplash.com/random/400x402" alt="">
               <div class="card-portafolio__description">
                   <article class="card-content"> 
-                    <h2>Hola</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quibusdam reprehenderit voluptatibus nam illum expedita sequi ullam, harum eligendi incidunt odit animi magnam. Repudiandae aperiam incidunt, officia sequi quos esse.</p>
+                    <h2 class="margin--none">Hola</h2>
                   </article>
               </div>
             </div>
@@ -169,8 +167,7 @@
               <img src="https://source.unsplash.com/random/400x402" alt="">
               <div class="card-portafolio__description">
                   <article class="card-content"> 
-                    <h2>Hola</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quibusdam reprehenderit voluptatibus nam illum expedita sequi ullam, harum eligendi incidunt odit animi magnam. Repudiandae aperiam incidunt, officia sequi quos esse.</p>
+                    <h2 class="margin--none">Hola</h2>
                   </article>
               </div>
             </div>
@@ -179,8 +176,7 @@
               <img src="https://source.unsplash.com/random/400x402" alt="">
               <div class="card-portafolio__description">
                   <article class="card-content"> 
-                    <h2>Hola</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quibusdam reprehenderit voluptatibus nam illum expedita sequi ullam, harum eligendi incidunt odit animi magnam. Repudiandae aperiam incidunt, officia sequi quos esse.</p>
+                    <h2 class="margin--none">Hola</h2>
                   </article>
               </div>
             </div>
@@ -189,14 +185,13 @@
               <img src="https://source.unsplash.com/random/400x402" alt="">
               <div class="card-portafolio__description">
                   <article class="card-content"> 
-                    <h2>Hola</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quibusdam reprehenderit voluptatibus nam illum expedita sequi ullam, harum eligendi incidunt odit animi magnam. Repudiandae aperiam incidunt, officia sequi quos esse.</p>
+                    <h2 class="margin--none">Hola</h2>
                   </article>
               </div>
             </div>
           </div>
         </section>
-        <section class="layout-contact">
+        <section class="layout-contact" id="contact">
           <h2 class="text-center padding__y">CONTACT ME</h2>
           <div class="contact-description padding__y">
             <form class="form" action="">
@@ -219,7 +214,6 @@
             </form>
             <img src="../assets/image/icon-contact.svg" class="layout-contact--img" alt="">
           </div>
-          <!-- <img src="../assets/image/penenennee.svg" alt=""> -->
         </section>
     </main>
     <FooterLayout/>
@@ -243,6 +237,16 @@ export default {
       flipedDev: false,
       flipedDes: false,
       flipedFront: false,
+    }
+  },
+  methods:{
+      goTodetail (proId, name, description) {
+      let query={
+        proId:proId,
+        name:name,
+        description:description
+      }
+      return this.$router.push({ name: 'details', params: query }) // -> /user/123
     }
   }
 }

@@ -1,5 +1,8 @@
 .card{
      position:relative;
+     @include phone{
+         width: 100%;
+     }
      width:300px;
      height:200px;
      
@@ -79,12 +82,13 @@
         justify-content: center;
         align-items: center;
         position:relative;
-        width:300px;
-        height:200px;
-        @include desktop{
-            width: 220px;
+        @include tablet {
+            width:300px;
+            height:200px;
         }
+        width: 100%;
         background:var(--white);
+        padding: .5em;
         border-radius: 0.8em;
         box-shadow:0 3px 6px rgba(0, 0, 0, 0.2);
         .monster{
@@ -103,23 +107,26 @@
         overflow: hidden;
         &__description{
             position: absolute;
-            transform: scale(0);
-            transform-origin:center center;
             opacity: 0;
             border-radius: 0.8em;
             z-index: 2;
-            transition: all .8s;
+            background: var(--second-color);
+            transition: opacity .5s;
+               height: 100%;
+               width: 100%;
             .card-content{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                margin: 1em;
+                margin: .7em;
                 height: 100%;
                 color: var(--white);
             }
+            
 
         }
+       
         @include desktop{
             &:nth-child(1),
             &:nth-child(5) {
@@ -176,12 +183,10 @@
         }
         &:hover{
             .card-portafolio__description{
-                height: 100%;
-                width: 100%;
-                transform: scale(1);
+             
+                // transform: translate(0); 
                 opacity: 1;
-                background: var(--second-color);
-                transition: all .8s;
+                transition: opacity .5s;
             }
         }
         &::before {

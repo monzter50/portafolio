@@ -28,3 +28,67 @@
     @content;
   }
 }
+@for $i from 1 through 5 {
+
+  // Padding
+  .pt-#{$i} {
+    padding-top: #{$i}em;
+  }
+
+  .pb-#{$i} {
+    padding-bottom: #{$i}em;
+  }
+
+  .pl-#{$i} {
+    padding-left: #{$i}em;
+  }
+
+  .pr-#{$i} {
+    padding-right: #{$i}em;
+  }
+
+  .px-#{$i} {
+    padding:0 #{$i}em;
+  }
+
+  .py-#{$i} {
+    padding: #{$i}em 0;
+  }
+
+  .p-#{$i} {
+    padding: #{$i}em;
+  }
+
+  // Margin
+  .mt-#{$i} {
+    margin-top: #{$i}em;
+  }
+
+  .mb-#{$i} {
+    margin-bottom: #{$i}em;
+  }
+
+  .ml-#{$i} {
+    margin-left: #{$i}em;
+  }
+
+  .mr-#{$i} {
+    margin-right: #{$i}em;
+  }
+
+  .mx-#{$i} {
+    margin:0 #{$i}em;
+  }
+
+  .my-#{$i} {
+    margin: #{$i}em 0;
+  }
+
+  .m-#{$i} {
+    margin: #{$i}em;
+  }
+
+  .font-size-#{$i} {
+    font-size: #{$i}em;
+  }
+}

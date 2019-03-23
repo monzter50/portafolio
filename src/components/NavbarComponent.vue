@@ -24,7 +24,7 @@
       </nav>
       <div class="header__items">
         <button type="button" class="header__toggler" @click="isActive = !isActive">
-          <div id="menuanim" class="">
+          <div class="hamburguer" v-bind:class="{active:isActive}">
             <span></span>
             <span></span>
             <span></span>

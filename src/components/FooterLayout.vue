@@ -1,11 +1,11 @@
 <template>
-    <footer class="footer">
+    <footer class="footer-name">
         <div class="layout-footer">
-            <div>
+            <div class="py-1">
                 <img src="" alt="">
                 <span>josemonzter50@gmail.com</span>
             </div>
-            <div>
+            <div class="py-1">
                 <a href="" class="margin__x--sm"><img src="../assets/image/codepen.svg" alt="" width="40px"></a>
                 <a href="" class="margin__x--sm"><img src="../assets/image/linkedin.svg" alt="" width="40px"></a>
                 <a href="" class="margin__x--sm"><img src="../assets/image/github-logo.svg" alt="" width="40px"></a>

@@ -1,5 +1,8 @@
 .form{
-    width: 500px;
+    @include desktop{
+        width: 500px;
+
+    }
     &--group{
         display: flex;
         flex-direction: column;
