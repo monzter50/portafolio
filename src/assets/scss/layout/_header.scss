@@ -1,10 +1,16 @@
 .hero{
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 100vh;
-    position: relative;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+
+    // height: 100vh;
+    position: relative;
+    // flex-direction: column;
+    background: var(--first-color);
+
+    
     .monster-dev{
         width: 300px;
         height: 300px;
@@ -31,7 +37,11 @@
         justify-content: center;
         align-items: center;
         height: 100%;
+        @include desktop{
+            flex-direction: row;
+        }
         &-content {
+
             @include phone{
                 color: var(--second-color);
                 a{

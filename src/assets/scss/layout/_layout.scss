@@ -1,13 +1,15 @@
 
 .monster-grid{
-  display:grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 100px 1fr 100px;
-  grid-template-areas:
-    'header'
-    'main'
-    'footer';
-  height: 100vh;
+//   display:grid;
+//   grid-template-columns: 1fr;
+//   grid-template-rows: 100px 1fr 100px;
+//   grid-template-areas:
+//     'header'
+//     'main'
+//     'footer';
+//   height: 100vh;
+display: flex;
+flex-direction: column;
 }
 .layout{
 	// About

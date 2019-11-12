@@ -7,7 +7,7 @@
             <img src="../assets/image/jose.png" class="monster-dev" alt="Monster Developer">
             <article class="text-center monster-content">
               <h1 class="margin--none">Hi, I'm a  Front-end developer <br>from Cancún, Q.Roo.</h1>
-              <a href="#about"><i class="fas fa-angle-down arrow-down"></i></a>
+              <!-- <a href="#about"><i class="fas fa-angle-down arrow-down"></i></a> -->
             </article> 
           </div>
           
@@ -111,7 +111,7 @@
             </div>
           </div> 
         </section>
-        <section class="layout-portafolio" id="portafolio">
+        <!-- <section class="layout-portafolio" id="portafolio">
           <h2 class="text-center padding__y margin--none">PORTAFOLIO</h2>
           <div class="cards-portafolio container ">
 
@@ -190,7 +190,7 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
         <section class="layout-contact" id="contact">
           <h2 class="text-center padding__y">CONTACT ME</h2>
           <div class="contact-description padding__y">

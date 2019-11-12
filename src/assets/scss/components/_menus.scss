@@ -1,6 +1,7 @@
 .header{
   grid-area:header;
   background: var(--first-color);
+  border-bottom: 1px solid white;
   @include desktop{
     background: var(--white);
   }
