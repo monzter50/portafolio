@@ -1,15 +1,7 @@
 
 .monster-grid{
-//   display:grid;
-//   grid-template-columns: 1fr;
-//   grid-template-rows: 100px 1fr 100px;
-//   grid-template-areas:
-//     'header'
-//     'main'
-//     'footer';
-//   height: 100vh;
-display: flex;
-flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 .layout{
 	// About
@@ -29,6 +21,7 @@ flex-direction: column;
 			flex-direction: column;
 			justify-content: center;
 			color: var(--neutral-color);
+			line-height: 1.5;
 			@include desktop{
 				&::after {
 					content: "";
@@ -49,7 +42,9 @@ flex-direction: column;
 		background: var(--neutral-color);
 	}
 	// Skills
-	&-skill{}
+	&-skills{
+		background: var(--neutral-color);
+	}
 	// Portafolio
 	&-portafolio{
 		background: var(--first-color);
@@ -72,7 +67,7 @@ flex-direction: column;
 	}
 	// Contact
 	&-contact{
-		padding-top: 5em;
+		// padding-top: 5em;
 		width: 85%;
 		max-width: 1200px;
 		margin: 0 auto;
@@ -94,14 +89,25 @@ flex-direction: column;
 		}
 	}
 	&-footer{
-		width: 100%;
+		max-width: 1200px;
+		width: 85%;
+		margin: 0 auto;
 		display: flex;
+		position: relative;
+
 		@include phone {
-		flex-direction: column;
+			flex-direction: column;
 		}
 		justify-content: space-between;
 		align-items: center;
-		
+		&::before {
+			content: "";
+			top: 0;
+			width: 100%;
+			height: 1px;
+			position: absolute;
+			background: var(--first-color);
+		}
 	}
 }
 .container{

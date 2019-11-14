@@ -47,7 +47,7 @@
     &--xxl{
         margin: var(--space-xxl);
     }
-    &__top{
+    &-top{
         margin-top: var(--space-md);
         &--md{
              margin-top: var(--space-md);
@@ -65,7 +65,7 @@
 			margin-top: var(--space-xxl);
 		}
     }
-     &__left{
+     &-left{
         margin-left: var(--space-md);
         &--md{
              margin-left: var(--space-md);
@@ -83,7 +83,7 @@
 			margin-left: var(--space-xxl);
 		}
     }
-     &__rigth{
+     &-rigth{
         margin-right: var(--space-md);
         &--md{
              margin-right: var(--space-md);
@@ -101,7 +101,7 @@
 			margin-right: var(--space-xxl);
 		}
     }
-    &__bottom{
+    &-bottom{
         margin-bottom: var(--space-md);
         &--md{
              margin-bottom: var(--space-md);
@@ -119,7 +119,7 @@
 			margin-bottom: var(--space-xxl);
 		}
     }
-    &__y{
+    &-y{
     	 margin: var(--space-md) 0;
         &--md{
              margin: var(--space-md) 0;
@@ -137,7 +137,7 @@
 			margin: var(--space-xxl) 0;
 		}
     }
-     &__x{
+     &-x{
     	 margin:0  var(--space-md);
         &--md{
              margin:0  var(--space-md);
@@ -175,7 +175,7 @@
     &--xxl{
         padding: var(--space-xxl);
     }
-    &__top{
+    &-top{
         padding-top: var(--space-md);
         &--md{
              padding-top: var(--space-md);
@@ -193,7 +193,7 @@
 			padding-top: var(--space-xxl);
 		}
     }
-     &__left{
+     &-left{
         padding-left: var(--space-md);
         &--md{
              padding-left: var(--space-md);
@@ -211,7 +211,7 @@
 			padding-left: var(--space-xxl);
 		}
     }
-     &__rigth{
+     &-rigth{
         padding-right: var(--space-md);
         &--md{
              padding-right: var(--space-md);
@@ -229,7 +229,7 @@
 			padding-right: var(--space-xxl);
 		}
     }
-    &__bottom{
+    &-bottom{
         padding-bottom: var(--space-md);
         &--md{
              padding-bottom: var(--space-md);
@@ -247,7 +247,7 @@
 			padding-bottom: var(--space-xxl);
 		}
     }
-    &__y{
+    &-y{
     	 padding: var(--space-md) 0;
         &--md{
              padding: var(--space-md) 0;
@@ -265,7 +265,7 @@
 			padding: var(--space-xxl) 0;
 		}
     }
-     &__x{
+     &-x{
     	 padding:0  var(--space-md);
         &--md{
              padding:0  var(--space-md);

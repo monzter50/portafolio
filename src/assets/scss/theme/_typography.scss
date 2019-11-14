@@ -4,5 +4,14 @@
 	}
 	&--grey{
 		color:var(--third-color);
+		a{
+			color:var(--third-color);
+		}
+	}
+	&--primary{
+		color:var(--btn-general-hover);
+		a{
+			color:var(--btn-general-hover);
+		}
 	}
 }

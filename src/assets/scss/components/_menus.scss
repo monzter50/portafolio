@@ -1,14 +1,19 @@
 .header{
   grid-area:header;
   background: var(--first-color);
-  border-bottom: 1px solid white;
+  // border-bottom: 1px solid white;
   @include desktop{
-    background: var(--white);
+    background: transparent;
   }
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
   position: fixed;
+  @include desktop{
+    position: absolute;
+    top: 0;
+  }
+ 
   width: 100%;
   z-index: 300;
   max-height: 100px;
@@ -34,9 +39,7 @@
     justify-items: center;
     max-width: 250px;
     position: relative;
-    @include desktop{
-      color: var(--first-color);
-    } 
+ 
   }
   &__toggler{
     position: relative;
@@ -123,7 +126,6 @@
     color: var(--white);
     @include desktop{
       font-size: 1.5em;
-      color: var(--first-color)
     }
   }
   &__list{
