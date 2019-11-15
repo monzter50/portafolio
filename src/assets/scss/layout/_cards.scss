@@ -2,9 +2,8 @@
 [class^=cards-] {
  display: grid;
  align-content: center;
-//  justify-items: center;
  grid-template-columns: 1fr;
- padding: 4em 0;
+ padding: 2em 0;
  grid-gap:.5em;
 }
 .cards{
@@ -18,14 +17,15 @@
         }
     }
     &-portafolio{
-        
+        &-default{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1.5em;
+        }
         display: grid;
-        // grid-template-columns:1fr;
         @include tablet{
             grid-template-columns: repeat(2, 1fr)
         }
-        // grid-template-rows: repeat(16, 5vw);
-         
          @include desktop{
             grid-template-columns: repeat(8, 1fr);
             grid-template-rows: repeat(8, 5vw);

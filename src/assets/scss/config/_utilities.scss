@@ -339,6 +339,23 @@
     font-size: var(--font-size-lg);
   }
 }
+.title{
+	&-underline{
+		position: relative;
+		font-size: 2em;
+		&::before{
+		  content: "";
+		  height: 4px;
+		  width: 20%;
+		  left: 0;
+		  position: absolute;
+		  bottom: -8px;
+		  background: var(--second-color);
+		//   transform: scaleX(.5);
+		}
+	
+	}
+}
 @include tablet {
 	:root {
 		--space-unit: 1.25em;

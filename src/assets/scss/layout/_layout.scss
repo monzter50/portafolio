@@ -65,6 +65,10 @@
 		}
 	
 	}
+	&-portafolio-default{
+		display: grid;
+		grid-template-columns: repeat(2,1fr);
+	}
 	// Contact
 	&-contact{
 		// padding-top: 5em;

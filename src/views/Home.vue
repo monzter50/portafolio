@@ -15,16 +15,15 @@
         </div>
       </section>
 
-      <section class="layout-development">
+      <section class="layout-development padding-y--lg">
         <div class="container">
           <div class="padding-top--xl">
-            <h2>Hard Skills</h2>
+            <h2 class="title-underline">Hard Skills</h2>
           </div>
           <div class="cards padding-y">
             <div class="card">
               <div class="card-container" :class="{fliped:flipedFront}">
                 <div class="card-front">
-                  <!-- <img src="https://avatars0.githubusercontent.com/u/17136843?s=460&v=4" class="card-header" alt=""> -->
                   <article class="card-description">
                     <h1 class="monster-title">Front-end Developer</h1>
                     <p
@@ -49,7 +48,6 @@
             <div class="card">
               <div class="card-container" :class="{fliped:flipedDes}">
                 <div class="card-front">
-                  <!-- <img src="https://avatars0.githubusercontent.com/u/17136843?s=460&v=4" class="card-header" alt=""> -->
                   <article class="card-description">
                     <h1 class="monster-title">Web Designer</h1>
                     <p
@@ -72,7 +70,6 @@
             <div class="card">
               <div class="card-container" :class="{fliped:flipedDev}">
                 <div class="card-front">
-                  <!-- <img src="https://avatars0.githubusercontent.com/u/17136843?s=460&v=4" class="card-header" alt=""> -->
                   <article class="card-description">
                     <h1 class="monster-title">Software Developer</h1>
                     <p
@@ -93,31 +90,50 @@
         </div>
       </section>
 
-      <section class="layout-skills">
-        <div class="padding-y container">
-          <h2>Soft Skills</h2>
-          <div class="cards-skills">
-            <div class="card-skill">
-              <img src="../assets/image/creative.svg" width="104px" alt />
-              <p class="monster-title">Creative</p>
+      <section class="layout-development padding-y--lg">
+        <div class="container">
+           <h2 class="title-underline">Portafolio</h2>
+        <div class="cards-portafolio-default ">
+          <div class="card-portafolio-default" data-name="Nahual">
+            <img src="..\assets\image\corderband.jpg" alt />
+
+            <div class="card-portafolio__description" @click="goTodetail(1,'nahual','loco')">
+              <article class="card-content">
+                <h2 class="margin--none">Corder Band</h2>
+              </article>
             </div>
-            <div class="card-skill">
-              <img src="../assets/image/support.svg" width="104px" alt />
-              <p class="monster-title">Teamwork</p>
+          </div>
+
+          <div class="card-portafolio-default" data-name="Nahual2" @click="goTodetail(1,'nahual','loco')">
+            <img src="..\assets\image\kukua.jpg" alt />
+            <div class="card-portafolio__description">
+              <article class="card-content">
+                <h2 class="margin--none">Xtabay</h2>
+              </article>
             </div>
-            <div class="card-skill">
-              <img src="../assets/image/decision.svg" width="104px" alt />
-              <p class="monster-title">Proactive</p>
+          </div>
+           <div class="card-portafolio-default" data-name="Nahual2" @click="goTodetail(1,'nahual','loco')">
+            <img src="..\assets\image\onprana.png" alt />
+            <div class="card-portafolio__description">
+              <article class="card-content">
+                <h2 class="margin--none">Xtabay</h2>
+              </article>
             </div>
-            <div class="card-skill">
-              <img src="../assets/image/intellectual.svg" width="104px" alt />
-              <p class="monster-title">Autodidact</p>
+          </div>
+           <div class="card-portafolio-default" data-name="Nahual2" @click="goTodetail(1,'nahual','loco')">
+            <img src="..\assets\image\xtabay.jpg" alt />
+            <div class="card-portafolio__description">
+              <article class="card-content">
+                <h2 class="margin--none">Xtabay</h2>
+              </article>
             </div>
           </div>
         </div>
+        </div>
+       
       </section>
 
-      <section class="layout-portafolio" id="portafolio">
+      <!-- <section class="layout-portafolio" id="portafolio">
         <h2 class="text-center padding-y margin--none">PORTAFOLIO</h2>
         <div class="cards-portafolio container">
           <div class="card-portafolio" data-name="Nahual">
@@ -193,7 +209,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
     </main>
     <FooterLayout />
