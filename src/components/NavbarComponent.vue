@@ -11,7 +11,7 @@
                 <a href="#home"  class="navbar__link"  @click="isActive = false">Home</a>
               </li>
               <li class="navbar__item">
-                <a href="#about"  class="navbar__link"  @click="isActive = false">Hard Skills</a>
+                <a href="#hard-skills"  class="navbar__link"  @click="isActive = false">Hard Skills</a>
               </li>
               <li class="navbar__item" >
                 <a href="#portafolio"  class="navbar__link"  @click="isActive =false">Portafolio</a>
