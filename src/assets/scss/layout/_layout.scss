@@ -1,151 +1,154 @@
+.monster-grid {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
 
-.monster-grid{
-	display: flex;
-	flex-direction: column;
-}
-.layout{
-	// About
-	&-about{
-		background: var(--first-color);
-		display: flex;
-		justify-content: center;
-		@include phone{
-			padding:0;
-			text-align: center;
-		}
-		padding: 4em 0;
-		&__content{
-			position: relative;
-			padding:2em 3em;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			color: var(--neutral-color);
-			line-height: 1.5;
-			@include desktop{
-				&::after {
-					content: "";
-					display: block;
-					position: absolute;
-					width: .5rem;
-					height: 100%;
-					left: 0;
-					background: var(--second-color);
-				}
-			}
-		
-		}
-	}
-	// Development
-	&-development{
-		display: flex;
-		background: var(--neutral-color);
-	}
-	// Skills
-	&-skills{
-		background: var(--neutral-color);
-	}
-	// Portafolio
-	&-portafolio{
-		background: var(--first-color);
-		color: var(--white);
-		position: relative;
-		@include desktop{
-			&::after {
-				content: "";
-				position: absolute;
-				width: 100vw;
-				 left: -5px;
-				//  right: 0;
-				bottom: -110px;
-				height: 170px;
+.layout {
 
-				background: url(https://s3.amazonaws.com/demo-portafolio/img/penenennee.svg) no-repeat 50%/cover;
-			}
-		}
-	
-	}
-	&-portafolio-default{
-		display: grid;
-		grid-template-columns: repeat(2,1fr);
-	}
-	// Contact
-	&-contact{
-		// padding-top: 5em;
-		width: 85%;
-		max-width: 1200px;
-		margin: 0 auto;
-		.contact-description{
-			display: grid;
-			grid-template-columns: 1fr;
-			@include desktop {
-				grid-template-columns: repeat(2, 1fr);
-			}
-			justify-items: center;
-			align-content: center;
-			align-items: center;
-		}
-		&--img{
-			width: 100%;
-			height: auto;
-			object-fit: contain;
-			max-width: 550px;
-		}
-	}
-	&-footer{
-		max-width: 1200px;
-		width: 85%;
-		margin: 0 auto;
-		display: flex;
-		position: relative;
+  // About
+  &-about {
+    background: var(--first-color);
+    display: flex;
+    justify-content: center;
 
-		@include phone {
-			flex-direction: column;
-		}
-		justify-content: space-between;
-		align-items: center;
-		&::before {
-			content: "";
-			top: 0;
-			width: 100%;
-			height: 1px;
-			position: absolute;
-			background: var(--first-color);
-		}
-	}
+    @include phone {
+      padding: 0;
+      text-align: center;
+    }
+
+    padding: 4em 0;
+
+    &__content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      @include desktop {
+        width: 50%;
+      }
+
+      color: var(--first-color);
+      line-height: 1.5;
+    }
+  }
+
+  // Development
+  &-development {
+    display: flex;
+  }
+
+  // Skills
+  &-skills {
+    background: var(--neutral-color);
+  }
+
+  // Portafolio
+  &-portafolio {
+    background: var(--first-color);
+    color: var(--white);
+    position: relative;
+
+    @include desktop {
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100vw;
+        left: -5px;
+        bottom: -110px;
+        height: 170px;
+
+        background: url(https://s3.amazonaws.com/demo-portafolio/img/penenennee.svg) no-repeat 50% / cover;
+      }
+    }
+  }
+
+  &-portafolio-default {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  // Contact
+  &-contact {
+    width: 85%;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    .contact-description {
+      display: grid;
+      grid-template-columns: 1fr;
+
+      @include desktop {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      justify-items: center;
+      align-content: center;
+      align-items: center;
+    }
+
+    &--img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      max-width: 550px;
+    }
+  }
+
+  &-footer {
+    max-width: 1200px;
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+
+    @include phone {
+      flex-direction: column;
+    }
+
+    justify-content: space-between;
+    align-items: center;
+
+    &::before {
+      content: "";
+      top: 0;
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      background: var(--first-color);
+    }
+  }
 }
-.container{
-	width: 1200px;
-	width: 90%;
-	margin: 0 auto;
+
+.main {
+  grid-area: main;
 }
-.main{
-	grid-area:main;
-	// background: teal;
-}
-.row-grid-two{
-  grid-template-rows:1fr 1fr;
-  @include desktop{
+
+.row-grid-two {
+  grid-template-rows: 1fr 1fr;
+
+  @include desktop {
     grid-template-rows: 1fr;
   }
 }
 
+@include desktop {
+  .main {
+    padding: 0;
+  }
 
-@include desktop{
-	.main{
-		padding:0;
-	}
 
-	.container{
-		max-width:1200px;
-		width:85%;
-		margin:0 auto;
-	}
-	.xtb-container{
-		padding-left:15px;
-		padding-right:15px;
-		max-width: 1920px;
-	}
 
+  .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1920px;
+  }
 }
 
+.container {
+  max-width: 1400px;
+  width: 85%;
+  margin: 0 auto;
+}

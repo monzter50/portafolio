@@ -1,87 +1,95 @@
-.hero{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  padding-top: 120px;
+
+  @include desktop {
     padding: 150px 0;
-    position: relative;
-    background: var(--first-color);
+    height: 100vh;
+  }
 
-    
-    .monster-dev{
-        width: 300px;
-        height: 300px;
-        @include desktop{
-            margin-right: 3em;
-            width: 250px;
-            height: 250px;
-        }
-        object-fit: contain;
+  .monster-dev {
+    width: 300px;
+    height: 300px;
+
+    @include desktop {
+      margin-right: 3em;
+      width: 250px;
+      height: 250px;
     }
-    
-    .monster{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        @include desktop{
-            flex-direction: row;
-        }
-        &-content {
-            @include phone{
-                color: var(--second-color);
-                a{
-                    color: var(--second-color);
-                }
-            padding-bottom: 0;
-            }
-            font-size: var(--font-size-sm);
-            color: var(--neutral-color);
-            position: relative;
-            @include desktop {
-                font-size: var(--font-size-md);
-            }
-        }
-    }
-    &::after{
-        @include phone{
-            background: initial;
-        }
-        content: "";
-        position: absolute;
-        width: 100%;
-        left: 0;
-        right: 0;
-        bottom: -10px;
-        z-index: -1;
-        height:70vh;
-        background: url(https://s3.amazonaws.com/demo-portafolio/img/header.svg) no-repeat 50%/cover;
-    }
-}
-.jumbtron{
+
+    object-fit: contain;
+  }
+
+  .monster {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 70vh;
-    position: relative;
-    flex-direction: column;
-    background: var(--first-color);
-}
-.arrow-down{
-    position: relative;
-    animation:float .8s linear infinite;
-}
-@keyframes float {
-    0% {
-        bottom: -8px;
+    height: 100%;
+
+    &-title {
+      @include desktop {
+        font-size: var(--font-size-md);
+      }
     }
 
-    50% {
-        bottom: -15px;
+    &-subtitle {
+      @include phone {
+        display: block;
+      }
     }
 
-    100% {
-        bottom: -8px;
+    @include desktop {
+      flex-direction: row;
     }
+
+    &-content {
+      @include phone {
+        color: var(--second-color);
+
+        a {
+          color: var(--second-color);
+        }
+
+        padding-bottom: 0;
+      }
+
+      font-size: var(--font-size-sm);
+      color: var(--neutral-color);
+      position: relative;
+
+      @include desktop {
+        font-size: var(--font-size-md);
+      }
+    }
+  }
+
+  &::after {
+    @include phone {
+      background: initial;
+    }
+
+    content: "";
+    position: absolute;
+    width: 100%;
+    right: -26%;
+    z-index: -1;
+    height:70vh;
+
+    @include desktop {
+      height: 100%;
+      background: url(https://media-files-test.s3.amazonaws.com/portafolio/profile.svg) no-repeat 50%/contain;
+    }
+  }
+}
+
+.jumbtron {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 70vh;
+  position: relative;
+  flex-direction: column;
+  background: var(--first-color);
 }

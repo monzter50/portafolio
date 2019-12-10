@@ -1,17 +1,29 @@
-.text{
-	&--white{
-		color:var(--white);
-	}
-	&--grey{
-		color:var(--third-color);
-		a{
-			color:var(--third-color);
-		}
-	}
-	&--primary{
-		color:var(--btn-general-hover);
-		a{
-			color:var(--btn-general-hover);
-		}
-	}
+.text {
+  &--white {
+    color: var(--white);
+  }
+
+  &--grey {
+    color: var(--third-color);
+
+    a {
+      color: var(--third-color);
+    }
+  }
+
+  &--primary {
+    color: var(--btn-general-hover);
+
+    a {
+      color: var(--btn-general-hover);
+    }
+  }
+
+  &--second {
+    color: var(--first-color);
+
+    a {
+      color: var(--first-color);
+    }
+  }
 }
