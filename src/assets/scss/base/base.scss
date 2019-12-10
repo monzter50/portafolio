@@ -12,13 +12,11 @@ html {
 }
 
 body {
-  margin: 0;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
   overflow-x: hidden;
-  max-width: 100%;
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  max-width: 1920px;
+  margin: 0 auto;
   font-family: var(--font-family);
   padding: 0;
   position: relative;

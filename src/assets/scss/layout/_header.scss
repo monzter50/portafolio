@@ -3,15 +3,13 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 150px 0;
   position: relative;
+  padding-top: 120px;
 
   @include desktop {
+    padding: 150px 0;
     height: 100vh;
   }
-
-  // background: var(--first-color);
-
 
   .monster-dev {
     width: 300px;
@@ -28,10 +26,19 @@
 
   .monster {
     display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
     height: 100%;
+
+    &-title {
+      @include desktop {
+        font-size: var(--font-size-md);
+      }
+    }
+
+    &-subtitle {
+      @include phone {
+        display: block;
+      }
+    }
 
     @include desktop {
       flex-direction: row;
@@ -66,9 +73,7 @@
     content: "";
     position: absolute;
     width: 100%;
-    // left: 0;
     right: -26%;
-    // bottom: -10px;
     z-index: -1;
     height:70vh;
 

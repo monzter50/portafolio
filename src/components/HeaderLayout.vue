@@ -3,12 +3,12 @@
     <div class="monster container">
       <article class="layout-about__content padding-y">
         <vue-typed-js
-          :strings="['Front-end Developer', 'Web Designer', 'Teacher','Engineer Software']"
+          :strings="['UI Developer', 'Web Designer', 'Teacher','Software Developer']"
           :loop="true"
         >
-          <h1 class="margin--none font-size--md">
+          <h1 class="margin--none monster-title">
             Hi, I'm a
-            <span class="text--primary">
+            <span class="text--primary monster-subtitle">
               <span class="typing"></span>
             </span>
           </h1>
@@ -17,19 +17,35 @@
         <p>Community Lead of the Sloth Tech looking for growth in the southeast area in Technology.</p>
         <p>
           Sigueme en:
-          <a href="http://" class="margin-left text--second">
+          <a
+            href="https://github.com/monzter50"
+            target="_blank"
+            class="margin-left text--second"
+          >
             <font-awesome-icon :icon="['fab', 'github']" />
           </a>
-          <a href="http://" class="margin-left text--second">
+          <a href="https://codepen.io/monzter50" target="_blank" class="margin-left text--second">
             <font-awesome-icon :icon="['fab', 'codepen']" />
           </a>
-          <a href="http://" class="margin-left text--second">
+          <a
+            href="https://www.linkedin.com/in/jose-gonzalez-b32228138/"
+            class="margin-left text--second"
+            target="_blank"
+          >
             <font-awesome-icon :icon="['fab', 'linkedin']" />
           </a>
-          <a href="http://" class="margin-left text--second">
+          <a
+            href="https://twitter.com/monster_glez"
+            target="_blank"
+            class="margin-left text--second"
+          >
             <font-awesome-icon :icon="['fab', 'twitter']" />
           </a>
-          <a href="http://" class="margin-left text--second">
+          <a
+            href="https://www.instagram.com/monster_glez/"
+            target="_blank"
+            class="margin-left text--second"
+          >
             <font-awesome-icon :icon="['fab', 'instagram']" />
           </a>
         </p>

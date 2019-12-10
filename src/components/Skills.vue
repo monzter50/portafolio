@@ -9,7 +9,7 @@
           <div class="card-container" :class="{fliped:flipedFront}">
             <div class="card-front">
               <article class="card-description">
-                <h1 class="monster-title">Front-end Developer</h1>
+                <h1 class="monster-title">UI Developer</h1>
                 <p
                   class="monster-description"
                 >I like to make structure of simple content, clean design and thoughtful interactions.</p>
@@ -78,12 +78,12 @@
 <script>
 export default {
   name: "skills",
-   data: function() {
+  data: function() {
     return {
       flipedDev: false,
       flipedDes: false,
       flipedFront: false
     };
-  },
+  }
 };
 </script>
